@@ -22,5 +22,3 @@ View the original design prototype here:
 - **JavaScript** – Frontend interactivity and logic  
 - **Figma** – UI/UX design and wireframe prototyping  
 
-## 📁 Folder Structure
-
