@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4 url("Photos/image 1.jpg") no-repeat center/cover;
+}
+
+.main-content-box {
+  background: white;
+  max-width: 1050px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #012a46, #61bffe);
+  padding: 8px 12px;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.header-title {
+  font-size: 20px;
+}
+
+.profile-icon {
+  background: white;
+  color: #4b0082;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  background: #004a7c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* this centers horizontally */
+  justify-content: center;
+}
+
+.no-family {
+  color: red;
+  margin: 10px 0;
+  text-align: center; /* ensure text is centered */
+}
+
+.add-family {
+  background: #004a7c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #6aaed9;
+}
+
+.no-family {
+  color: red;
+  margin-top: 8px;
+}
+
+.add-family {
+  background: #004a7c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.info-sections {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.info-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px #ccc;
+  padding: 10px;
+}
+
+.info-header {
+  background: #004a7c;
+  color: white;
+  padding: 5px;
+  border-radius: 6px 6px 0 0;
+  font-size: 18px;
+}
+
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group span {
+  font-weight: bold;
+}
+
+.input-group input {
+  border: 1px solid #afaeae;
+  padding: 4px;
+  width: 75%;
+  background: #f9f9f9;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.modal-content input {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.modal-content select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.modal-content button {
+  background: #004a7c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+.footer-buttons {
+  display: flex;
+  justify-content: flex-start; /* Aligns PREV button to the left */
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background-color: #0072b1;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  display: inline-block;
+}
+.submit-container {
+  display: flex;
+  justify-content: center; /* centers the button horizontally */
+  margin-top: 10px;
+}
+
+.submit-btn {
+  background: #004a7c;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-btn-container {
+  display: flex;
+  justify-content: center; /* centers the button horizontally */
+  margin-top: 10px;
+}
+
+.save-btn-container button {
+  background: #004a7c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-title {
+  background-color: #004a7c; /* blue background */
+  color: white; /* white text */
+  padding: 18px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}

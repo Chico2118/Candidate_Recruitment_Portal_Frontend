@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidate Recruitment - CHO</title>
+  <link rel="stylesheet" href="CHO1.css" />
+</head>
+<body class="custom-form">
+
+  <div class="header-container">  
+    <div class="left-section">
+      <div class="menu-icon">☰</div>
+      <h1 class="header-title">Candidate Recruitment - CHO</h1>
+    </div>
+    <div class="profile-container">
+      <div class="profile-icon">👤</div>
+    </div>
+  </div>
+  <div class="sub-title-box">
+    Candidate Recruitment
+  </div>
+
+  <div class="container">
+
+    <div class="form-group">
+      <div>
+        <label>Interviewed by</label>
+        <input type="text" class="form-control short" placeholder="Interviewer Name"
+               style="width: 250% ;">
+      </div>
+      <div>
+        <label>Level <span class="required">*</span></label>
+        <input type="text" class="form-control short" placeholder="Enter Level"
+                style="width: 250% ;">
+      </div>
+      <div>
+        <label>Company</label>
+        <input type="text" class="form-control short" placeholder="Enter Company Name"
+                style="width: 250% ;">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div style="flex: 1;">
+        <label>Reference Details</label>
+        <input type="text" class="form-control long" placeholder="Enter Reference Details">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div style="flex: 1;">
+        <label>Remarks</label>
+        <textarea class="form-control long" rows="3" placeholder="Enter remarks"></textarea>
+      </div>
+    </div>
+
+    <div class="experience-header">EXPERIENCE DETAILS</div>
+
+    <div id="experience-scroll-container">
+      <table id="experience-table">
+        <thead>
+          <tr>
+            <th>Organization Name</th>
+            <th>Start Date</th>
+            <th>End Date/ Status</th>
+            <th>Actions</th>
+            <th>Currently working</th>
+          </tr>
+        </thead>
+        <tbody id="experience-body">
+          <tr>
+            <td colspan="5" class="no-experience">
+              No experience details added. Click “+ Experience” to add your work history
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="add-experience-btn" onclick="addExperience()">+ Experience</button>
+
+  </div>
+
+  <script src="CHO1.js"></script>
+
+  <div class="footer-buttons">
+  <a href="CHO.html" class="nav-btn">PREV</a>
+  <a href="CHO2.html" class="nav-btn">NEXT</a>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Recruitment - CHO</title>
+    <link rel="stylesheet" href="CHO2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER OUTSIDE MAIN BOX -->
+    <div class="header">
+      <div class="menu-icon">&#9776;</div>
+      <div class="header-title">Candidate Recruitment - CHO</div>
+      <div class="profile-icon"><span>&#128100;</span></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content-box">
+      <div class="container">
+        <div class="section-title">Family Members</div>
+
+        <div class="table-container">
+          <table id="familyTable">
+            <tr>
+              <th>Relationship</th>
+              <th>Occupation</th>
+              <th>Employer Name</th>
+              <th>Location</th>
+              <th>Service Type</th>
+              <th>Actions</th>
+            </tr>
+            <tr></tr>
+          </table>
+
+          <div class="no-family" id="noFamilyMsg">
+            No family members added. Click “+ Family Members” to add family
+            details
+          </div>
+          <button class="add-family" onclick="openModal()">
+            + Family Members
+          </button>
+        </div>
+
+        <div class="info-sections">
+          <div class="info-box">
+            <div class="info-header">Father’s Information</div>
+            <div class="input-group">
+              <span>Name:</span>
+              <input type="text" placeholder="Enter father’s name" />
+            </div>
+            <div class="input-group">
+              <span>Employer:</span>
+              <input type="text" placeholder="Enter employer name" />
+            </div>
+            <div class="input-group">
+              <span>Designation:</span>
+              <input type="text" placeholder="Enter designation" />
+            </div>
+            <div class="input-group">
+              <span>Location:</span>
+              <input type="text" placeholder="Enter location" />
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="info-header">Brother’s Information</div>
+            <div class="input-group">
+              <span>Name:</span>
+              <input type="text" placeholder="Enter brother’s name" />
+            </div>
+            <div class="input-group">
+              <span>Employer:</span>
+              <input type="text" placeholder="Enter employer name" />
+            </div>
+            <div class="input-group">
+              <span>Designation:</span>
+              <input type="text" placeholder="Enter designation" />
+            </div>
+            <div class="input-group">
+              <span>Location:</span>
+              <input type="text" placeholder="Enter location" />
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <button class="submit-btn">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="familyModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="modal-title">Family Member’s Details</h2>
+
+        <label>Relationship:<span style="color: red">*</span></label>
+        <select id="relationship">
+          <option value="">Select</option>
+          <option value="Father">Father</option>
+          <option value="Mother">Mother</option>
+          <option value="Brother">Brother</option>
+          <option value="Sister">Sister</option>
+        </select>
+        <label>Occupation:</label>
+        <input type="text" id="occupation" placeholder="Enter occupation" />
+        <label>Employer Name:</label>
+        <input type="text" id="employer" placeholder="Enter employer name" />
+        <label>Location:</label>
+        <input type="text" id="location" placeholder="Enter location" />
+        <label>Service Type:</label>
+        <select id="serviceType">
+          <option value="">Select Service Type</option>
+          <option value="Private">Private</option>
+          <option value="Government">Government</option>
+        </select>
+        <div class="save-btn-container">
+          <button onclick="saveFamilyMember()">SAVE</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-buttons">
+      <a href="CHO1.html" class="nav-btn">PREV</a>
+    </div>
+
+    <script src="CHO2.js"></script>
+  </body>
+</html>
